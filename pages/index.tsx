@@ -5,7 +5,7 @@ const Container = styled.main`
 `;
 
 function Home() {
-  return <Container>dsa</Container>;
+  return <Container>hello</Container>;
 }
 
 export default Home;

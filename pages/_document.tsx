@@ -5,6 +5,8 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document';
+import { ThemeProvider } from '@emotion/react';
+import theme from 'styles/themes';
 import { renderStatic } from '../shared/renderer';
 import GlobalStyles from 'styles/GlobalStyles';
 
@@ -33,9 +35,11 @@ export default class AppDocument extends Document {
       <Html>
         <Head />
         <body>
-          <GlobalStyles />
-          <Main />
-          <NextScript />
+          <ThemeProvider theme={theme}>
+            <GlobalStyles />
+            <Main />
+            <NextScript />
+          </ThemeProvider>
         </body>
       </Html>
     );
