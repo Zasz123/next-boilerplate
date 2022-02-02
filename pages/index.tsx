@@ -1,5 +1,11 @@
+import styled from '@emotion/styled';
+
+const Container = styled.main`
+  background-color: green;
+`;
+
 function Home() {
-  return <div>dsa</div>;
+  return <Container>dsa</Container>;
 }
 
 export default Home;
